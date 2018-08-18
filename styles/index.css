@@ -1,0 +1,133 @@
+/* No background color for the dropdown */
+.dropdown-menu {
+  background-color: none;
+}
+
+/* Image styles */
+#parallax {
+  clear: both;
+  width: 100%;
+  height: 300px;
+  background: url(../images/contemplate.jpg);
+  background-attachment: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* h1 styles of image */
+#parallax h1 {
+  float: right;
+  margin-right: 2%;
+  font-size: 250%;
+  color: white;
+  text-shadow: 1px 1px black;
+  width: 40%;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* h2 font styles */
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* main section styles */
+main {
+  background-color: #f2f2f2;
+	padding-top: 10px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	display: block;
+	margin-left: auto;
+}
+
+/* Made the body color white */
+body {
+  background-color: white;
+}
+
+/* Meet Our Founders */
+.founders {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* Added styles to the images of us and to the text that goes along with the images */
+#nathan {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  /* float: left; */
+}
+
+#tabitha {
+  height: 220px;
+  width: 200px;
+  border-radius: 50%;
+  /* float: right; */
+}
+
+#michael {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+#info {
+  text-align: center;
+  border: 1px solid black;
+  background-color: #aeb3b7;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Our Vision */
+.ourvision {
+  text-align: center;
+  color: black;
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* Added floats and width and height to the images */
+#therapyImage {
+  float: left;
+}
+
+#smile {
+  float: right;
+  width: 55%;
+  height: auto;
+}
+
+#therapyImage {
+  width: 41%;
+  height: auto;
+}
+
+/* Centered the text */
+.contrib {
+  text-align: center;
+}
+
+/* Font styles for the h1 heading in nav */
+div.col-sm-4 h1 {
+  	font-family: "Georgia", "Times New Roman", "serif";
+    text-align: left;
+    font-size: 3em;
+  }

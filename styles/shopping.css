@@ -1,0 +1,30 @@
+/* Added height and width to the image */
+.img {
+    height: 250px;
+    width: 100%;
+}
+
+/* Centered the h3 headings */
+h3 {
+text-align: center;
+}
+
+/* added color to nav text */
+.col-sm-4 {
+    color:#193760;
+  }
+
+/* more h3 heading styles */
+  h3 {
+    font-size: 1.2em;
+    font-style: normal;
+    /* font-family: sans-serif; */
+    	font-family: "Georgia", "Times New Roman", "serif";
+  }
+
+/* styles for mobile */
+  @media only screen and (max-width: 480px) {
+     #products{
+      width: 50%;
+    }
+  }

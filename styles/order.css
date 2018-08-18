@@ -1,0 +1,9 @@
+/* added padding to the labels class */
+.labels {
+    padding-left: 15px;
+}
+
+/* added color to the therapy 4 you nexxt to the nav */
+.col-sm-4 {
+    color:#193760;
+  }

@@ -1,0 +1,152 @@
+/* Set font for all of the body text */
+body {
+	font-family: "Georgia", "Times New Roman", "serif";
+}
+
+h1 {
+	font-style: italic;
+}
+
+/* All h5 headings are made bold with 10px of padding */
+h5 {
+	/* text-align: center; */
+  font-weight: bold;
+	padding: 10px;
+}
+
+/* Forms */
+label {
+	display: block;
+	float: left;
+	text-align: right;
+	width: 120px;
+	padding-right: 10px;
+}
+
+/*Input styles */
+input {
+	display: block;
+	border: 2px solid gray;
+  border-radius: 4px;
+}
+
+input[type=text]:focus {
+    border-color: #26CBDC;
+}
+/* End of Forms */
+
+/*Table styles  */
+table {
+	text-align: center;
+	border: solid;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+}
+
+/* Styles for classes */
+.col-sm-4 {
+	color:#193760;
+}
+
+.signtheme {
+	color: #193760;
+	border: solid;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	border-radius: 5px;
+	border-color: #26CBDC;
+}
+/* End of Signtheme */
+
+/* Signtheme */
+/* Styles for all id's in the html */
+#signform {
+	display: flex; justify-content: center;
+  background-color: #f2f2f2;
+  text-align: center;
+	font-weight: bold;
+	padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#donationhone {
+	display: flex; justify-content: center;
+	background-color: white;
+	border-top: 2px solid MidnightBlue ;
+	border-bottom: 2px solid MidnightBlue ;
+	color: MidnightBlue ;
+}
+
+#tabler {
+  background-color: #f2f2f2;
+}
+
+#abovefaq{
+	  background-color: #f2f2f2;
+}
+
+#faq {
+	/* text-align: center; */
+	background-color: #f2f2f2;
+	padding: 10px;
+}
+
+/* Footer styles */
+footer {
+	background: linear-gradient(#26CBDC,rgb(58, 130, 147));
+	background-color: #26CBDC;
+	text-align: center;
+	font-family: "Georgia", "Times New Roman", "serif";
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* Mobile display */
+@media only screen and (max-width: 480px) {
+
+  #parallax, #therapyImage, #smile, #tabler, #products {
+    display: none;
+  }
+
+	h1 {
+		padding-right: 65px;
+	}
+
+	.navbar {
+	    text-align: center;
+			padding-left: -80px;
+	  }
+
+	.signtheme {
+		padding-top: 10px;
+		padding-right: 45px;
+		padding-bottom: 10px;
+		padding-left: 60px;
+		text-align: center;
+	}
+
+	#signform {
+		display: flex; justify-content: center;
+	  background-color: #f2f2f2;
+	  text-align: center;
+		font-weight: bold;
+		padding-top: 10px;
+	  padding-bottom: 10px;
+	}
+
+	#info {
+	  text-align: center;
+		padding-top: 5px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+		padding-left: 5px;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+}
