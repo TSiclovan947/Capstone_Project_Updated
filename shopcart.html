@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!-- this is a comment -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Therapy 4 You</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/beautify.css">
+    <link rel="stylesheet" href="styles/borrowed.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="sticky-sm-top navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <div class="row navbar">
+                    <div class="col-sm-4">
+                        <img src="images/logo6.png" alt="Logo" width="180" height="160">
+                    </div>
+                    <div class="col-sm-4">
+                        <h1>Therapy 4 You</h1>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="navbar-nav mr-auto navButtons">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="therapy.html">Therapy</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sign-In
+                    </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="signIn.html">Sign-In</a>
+                                    <a class="dropdown-item" href="signUp.html">Sign-Up</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Contribute
+                    </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="donation.html">Donate</a>
+                                    <a class="dropdown-item" id="merchandise" href="shopping.html">Merchandise</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main id="finalizeOrder">
+            <h2 id="finorder">Finalize Your Order</h2>
+            <div id="errorText"></div>
+            <form action="results.html" novalidate="novalidate">
+                <fieldset id="billingAd" class="text">
+                    <legend>Specify Billing Address</legend>
+                    <label for="bfirstName">First Name</label>
+                    <input id="bfirstName" name="BillingFirstName" type="text" required="required" />
+                    <label for="blastName">Last Name</label>
+                    <input id="blastName" name="BillingLastName" type="text" required="required" />
+                    <label for="bStreetAd">Street Address</label>
+                    <input id="bStreetAd" name="BillingStreet" type="text" required="required" />
+                    <label for="bCity">City</label>
+                    <input id="bCity" name="BillingCity" type="text" required="required" />
+                    <label for="bState">State</label>
+                    <select id="bState" name="BillingState" required="required">
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AZ">AZ</option>
+                        <option value="AR">AR</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DE">DE</option>
+                        <option value="DC">DC</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="IA">IA</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="MA">MA</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MS">MS</option>
+                        <option value="MO">MO</option>
+                        <option value="MT">MT</option>
+                        <option value="NE">NE</option>
+                        <option value="NV">NV</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NY">NY</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WV">WV</option>
+                        <option value="WI">WI</option>
+                        <option value="WY">WY</option>
+                    </select>
+                    <label for="billZip">Zip</label>
+                    <input id="billZip" name="BillingZip" type="number" required="required" />
+                    <label for="billPhone">Phone</label>
+                    <input id="billPhone" name="BillingPhone" type="number" required="required" />
+                    <div class="errorMessage"></div>
+                </fieldset>
+                <fieldset id="deliveryAddress" class="text">
+                    <legend>Specify Delivery Address</legend>
+                    <div class="checks">
+                        <input id="sameAddr" name="SameAddress" type="checkbox" />
+                        <label for="sameAddr">Check if Delivery Address is same as Billing Address </label>
+                    </div>
+                    <label for="delivFName">First Name</label>
+                    <input id="delivFName" name="DeliveryFirstName" type="text" required="required" />
+                    <label for="delivLName">Last Name</label>
+                    <input id="delivLName" name="DeliveryLastName" type="text" required="required" />
+                    <label for="delivStreet">Street Address</label>
+                    <input id="delivStreet" name="DeliveryStreet" type="text" required="required" />
+                    <label for="delivCity">City</label>
+                    <input id="delivCity" name="DeliveryCity" type="text" required="required" />
+                    <label for="delivState">State</label>
+                    <select id="delivState" name="DeliveryState" required="required">
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AZ">AZ</option>
+                        <option value="AR">AR</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DE">DE</option>
+                        <option value="DC">DC</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="IA">IA</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="MA">MA</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MS">MS</option>
+                        <option value="MO">MO</option>
+                        <option value="MT">MT</option>
+                        <option value="NE">NE</option>
+                        <option value="NV">NV</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NY">NY</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WV">WV</option>
+                        <option value="WI">WI</option>
+                        <option value="WY">WY</option>
+                    </select>
+                    <label for="delivZip">Zip</label>
+                    <input id="delivZip" name="DeliveryZip" type="number" required="required" />
+                    <label for="delivPhone">Phone</label>
+                    <input id="delivPhone" name="DeliveryPhone" type="number" required="required" />
+                    <div class="errorMessage"></div>
+                </fieldset>
+                <fieldset id="paymentInfo" class="text">
+                    <legend>Fill Out Payment Information</legend>
+                    <div id="cards" class="inline">
+                        <input id="visa" name="PaymentType" type="radio" value="Visa" />
+                        <label for="visa">Visa</label>
+                        <input id="mc" name="PaymentType" type="radio" value="MC" />
+                        <label for="mc">Master Card</label>
+                        <input id="discover" name="PaymentType" type="radio" value="Discover" />
+                        <label for="discover">Discover</label>
+                        <input id="amex" name="PaymentType" type="radio" value="AmEx" />
+                        <label for="amex">American Express</label>
+                    </div>
+                    <div>
+                        <label for="ccNum">Card #</label>
+                        <input id="ccNum" name="CardNumber" type="number" required="required" />
+                        <div id="ccNumErrorMessage"></div>
+                    </div>
+                    <div>
+                        <label>Expiration</label>
+                        <div class="inline" id="exp">
+                            <label for="expMo" id="expMoLabel">Expiration Month</label>
+                            <select id="expMo" name="ExpMonth" required="required">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <label for="expYr" id="expYrLabel">Expiration Year</label>
+                            <select id="expYr" name="ExpYear" required="required">
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                            </select>
+                        </div>
+                        <label for="cvv">CVV</label>
+                        <input id="cvv" name="CVVValue" type="number" required="required" />
+                        <div id="cvvErrorMessage"></div>
+                    </div>
+                    <div class="errorMessage"></div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <legend>Shipping Details</legend>
+                        <p>Delivery is anywhere from <strong>five to ten</strong> business days for residents of the United States of America. For other territories it may take up to twenty business days.</p>
+                        <p><strong>Note: If you want to receive deals and discounts become a member by creating an account.</strong></p>
+                        <p><a href="signUp.html">If You don't already have an account click here to make one.</a></p>
+                        <p><a href="signIn.html">Click here to sign in to your existing account.</a></p>
+                    </div>
+                </fieldset>
+                <div id="buttonContainer">
+                    <input type="submit" value="Place Order" id="orderButton" />
+                </div>
+            </form>
+        </main>
+        <footer>
+            Copyright © 2018 Therapy 4 You
+            <br>
+            <a href="mailto: ">contact@therapy4you.com</a>
+            <br>
+            <a href="tel:623-480-7979">623-480-7979</a>
+        </footer>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+
+</html>
