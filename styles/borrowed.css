@@ -56,7 +56,7 @@ footer, header, hgroup, menu, nav, section {
 
 /* form */
 form {
-   width: 670px;
+   width: 680px;
    margin: 0 auto;
    padding-bottom: 20px;
 }
@@ -97,12 +97,12 @@ label, input {
    left: -10000px;
 }
 
-#buttonContainer {
+#buttonOrd {
    width: 100%;
    text-align: center;
 }
 
-#orderButton {
+#submitButton {
    margin: 0 auto;
    font-size: 24px;
    top: 15px;
@@ -163,15 +163,15 @@ div.inline option {
    text-align: left;
 }
 
-#bfirstName, #blastName, #delivFName, #delivLName, #bCity, #delivCity, #billPhone, #delivPhone {
+#bfirstName, #blastName, #dFirstName, #dlastName, #bCity, #dCity, #billPhone, #dPhone {
    width: 15em;
 }
 
-#bStreetAd, #delivStreet, #billEmail, #delivEmail {
+#bStreetAd, #dStreetAdr, #billEmail, #delivEmail {
    width: 15em;
 }
 
-#billZip, #delivZip {
+#bZipCode, #dZipCode {
    width: 10em;
 }
 

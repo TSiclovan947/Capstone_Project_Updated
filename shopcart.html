@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/beautify.css">
     <link rel="stylesheet" href="styles/borrowed.css">
+    <script type="text/javascript" src="form.js"></script>
 </head>
 
 <body>
@@ -73,6 +74,7 @@
                     <input id="bCity" name="BillingCity" type="text" required="required" />
                     <label for="bState">State</label>
                     <select id="bState" name="BillingState" required="required">
+                    <!--   State Option Buttons borrowed from project  -->
                         <option value="AL">AL</option>
                         <option value="AK">AK</option>
                         <option value="AZ">AZ</option>
@@ -125,8 +127,8 @@
                         <option value="WI">WI</option>
                         <option value="WY">WY</option>
                     </select>
-                    <label for="billZip">Zip</label>
-                    <input id="billZip" name="BillingZip" type="number" required="required" />
+                    <label for="bZipCode">Zip</label>
+                    <input id="bZipCode" name="BillingZip" type="number" required="required" />
                     <label for="billPhone">Phone</label>
                     <input id="billPhone" name="BillingPhone" type="number" required="required" />
                     <div class="errorMessage"></div>
@@ -137,16 +139,16 @@
                         <input id="sameAddr" name="SameAddress" type="checkbox" />
                         <label for="sameAddr">Check if Delivery Address is same as Billing Address </label>
                     </div>
-                    <label for="delivFName">First Name</label>
-                    <input id="delivFName" name="DeliveryFirstName" type="text" required="required" />
-                    <label for="delivLName">Last Name</label>
-                    <input id="delivLName" name="DeliveryLastName" type="text" required="required" />
-                    <label for="delivStreet">Street Address</label>
-                    <input id="delivStreet" name="DeliveryStreet" type="text" required="required" />
-                    <label for="delivCity">City</label>
-                    <input id="delivCity" name="DeliveryCity" type="text" required="required" />
-                    <label for="delivState">State</label>
-                    <select id="delivState" name="DeliveryState" required="required">
+                    <label for="dFirstName">First Name</label>
+                    <input id="dFirstName" name="DeliveryFirstName" type="text" required="required" />
+                    <label for="dlastName">Last Name</label>
+                    <input id="dlastName" name="DeliveryLastName" type="text" required="required" />
+                    <label for="dStreetAdr">Street Address</label>
+                    <input id="dStreetAdr" name="DeliveryStreet" type="text" required="required" />
+                    <label for="dCity">City</label>
+                    <input id="dCity" name="DeliveryCity" type="text" required="required" />
+                    <label for="dState">State</label>
+                    <select id="dState" name="DeliveryState" required="required">
                         <option value="AL">AL</option>
                         <option value="AK">AK</option>
                         <option value="AZ">AZ</option>
@@ -199,10 +201,10 @@
                         <option value="WI">WI</option>
                         <option value="WY">WY</option>
                     </select>
-                    <label for="delivZip">Zip</label>
-                    <input id="delivZip" name="DeliveryZip" type="number" required="required" />
-                    <label for="delivPhone">Phone</label>
-                    <input id="delivPhone" name="DeliveryPhone" type="number" required="required" />
+                    <label for="dZipCode">Zip</label>
+                    <input id="dZipCode" name="DeliveryZip" type="number" required="required" />
+                    <label for="dPhone">Phone</label>
+                    <input id="dPhone" name="DeliveryPhone" type="number" required="required" />
                     <div class="errorMessage"></div>
                 </fieldset>
                 <fieldset id="paymentInfo" class="text">
@@ -263,8 +265,8 @@
                         <p><a href="signIn.html">Click here to sign in to your existing account.</a></p>
                     </div>
                 </fieldset>
-                <div id="buttonContainer">
-                    <input type="submit" value="Place Order" id="orderButton" />
+                <div id="buttonOrd">
+                    <input type="submit" name="submit" value="Place Order" id="submitButton" />
                 </div>
             </form>
         </main>
