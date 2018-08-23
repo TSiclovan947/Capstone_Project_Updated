@@ -48,3 +48,12 @@ div.col-sm-4 h1 {
 
   }
 }
+
+fieldset.text {
+    color: #193760;
+}
+
+fieldset, h2#finorder {
+    color: #193760;
+}
+
