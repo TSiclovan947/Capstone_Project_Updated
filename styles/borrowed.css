@@ -50,6 +50,17 @@ footer, header, hgroup, menu, nav, section {
   
 }
 
+div.container header h1 {
+    font-weight: bold;
+   font-size: 38px;
+    text-align: center;
+        color: #193760;
+}
+
+section#formSub {
+    background: powderblue;
+}
+
 #finalizeOrder {
     background: powderblue;
 }
@@ -181,4 +192,8 @@ div.inline option {
 
 #cvv {
    width: 4em;
+}
+
+div.results {
+    text-align: center;
 }

@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/beautify.css">
     <link rel="stylesheet" href="styles/borrowed.css">
-    <script type="text/javascript" src="form.js"></script>
+    <script type="text/javascript" src="javascript/form.js">
+  </script>
 </head>
 
 <body>
@@ -61,7 +62,7 @@
         <main id="finalizeOrder">
             <h2 id="finorder">Finalize Your Order</h2>
             <div id="errorText"></div>
-            <form action="results.html" novalidate="novalidate">
+            <form action="submit.html" novalidate="novalidate">
                 <fieldset id="billingAd" class="text">
                     <legend>Specify Billing Address</legend>
                     <label for="bfirstName">First Name</label>
@@ -270,7 +271,7 @@
                         <legend>Before You Go, Give Us Your Feedback!</legend>
                         <p>We love hearing about your experience! Leave any comments or concerns.</p>
                         <!-- Used Google to help with this -->
-                        <textarea name="ItemDetail.Comments" id="ItemDetail_Comments" class="form-control " data-bind="value: Comments, ,   }" data-trigger="hover" data-placement="bottom" data-content="The Comments field is required." data-original-title="" title=""></textarea>
+                        <textarea name="ItemDetail.Comments" id="ItemDetail_Comments" class="form-control " data-bind="value: Comments, ,   }" data-trigger="hover" data-placement="bottom" data-content="The Comments field is required." data-original-title="" title="" placeholder="420 Max Characters"></textarea>
                     </div>
                 </fieldset>
                 <div id="buttonOrd">
